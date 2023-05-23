@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>About Me | Alex</title>
+    <!-- 引入样式表 -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- 引入字体 -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
+    <style>
+        /* 页面背景 */
+        body {
+            background: #f6f6f6;
+        }
+
+        /* 头部导航栏 */
+        .navbar {
+            background: #333;
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+        }
+
+        /* 导航栏链接 */
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+
+        /* 导航栏链接悬停效果 */
+        .navbar a:hover {
+            color: #f6f6f6;
+        }
+
+        /* 主体容器 */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 100px 20px 50px;
+            margin-top: 100px;
+        }
+
+        /* 头像 */
+        .avatar {
+            border-radius: 50%;
+            overflow: hidden;
+            width: 200px;
+            height: 200px;
+            margin-bottom: 50px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 姓名 */
+        .name {
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        /* 标语 */
+        .slogan {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 50px;
+            text-align: center;
+            max-width: 800px;
+        }
+
+        /* 个人简介 */
+        .intro {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 50px;
+            text-align: center;
+            max-width: 800px;
+        }
+
+        /* 技能 */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+            max-width: 800px;
+        }
+
+        /* 技能卡片 */
+        .skill {
+            background: #fff;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin: 20px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+        }
+
+        /* 技能图标 */
+        .skill i {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+
+            /* 技能标题 */
+        }
+
+        .skill h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* 技能描述 */
+        .skill p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        /* 联系方式 */
+        .contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 50px;
+            max-width: 800px;
+        }
+
+        /* 联系方式标题 */
+        .contact h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* 联系方式列表 */
+        .contact ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* 联系方式项 */
+        .contact li {
+            margin: 20px;
+        }
+
+        /* 联系方式图标 */
+        .contact i {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* 联系方式链接 */
+        .contact a {
+            font-size: 16px;
+            color: #666;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        /* 联系方式链接悬停效果 */
+        .contact a:hover {
+            color: #333;
+        }
+
+        /* 底部版权信息 */
+        .footer {
+            background: #333;
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+        }
+
+        /* 底部版权信息链接 */
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        /* 底部版权信息链接悬停效果 */
+        .footer a:hover {
+            color: #f6f6f6;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头部导航栏 -->
+    <div class="navbar">
+        <div class="logo">
+            <h3>aleXploration</h3>
+        </div>
+        <div class="nav-links">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </div>
+    </div>
+    <!-- 主体容器 -->
+    <div class="container">
+        <!-- 头像 -->
+        <div class="avatar">
+            <img src="avatar.jpg" alt="Avatar">
+        </div>
+        <!-- 姓名 -->
+        <h1 class="name">alex</h1>
+        <!-- 标语 -->
+        <h2 class="slogan">student &amp; coder</h2>
+        <!-- 个人简介 -->
+        <p class="intro">本次作业部分文字、图片来源于网络。参考了网络上的资料。为了使用多种知识，网页风格并不统一。在作业中，我学习了以下知识点：</p>
+        <!-- 技能 -->
+        <div class="skills">
+            <div class="skill">
+                <i class="fas fa-code"></i>
+                <h3>HTML</h3>
+                <p>html和css语言的基本语法等。</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-pencil-alt"></i>
+                <h3>Dreamweaver</h3>
+                <p>Dreamweaver软件的基础使用</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>JavaScript</h3>
+                <p>JavaScript语言的基本语法、一些库的调用等。</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Markdown</h3>
+                <p>blog内容通过Markdown编辑。</p>
+            </div>
+        </div>
+    </div>
+    <!-- 底部信息 -->
+    <div class="footer">
+        <div class="left">
+            <p>&copy; aleXploration 2023. All rights reserved.</p>
+        </div>
+        <div class="right">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</body>
+
+</html>

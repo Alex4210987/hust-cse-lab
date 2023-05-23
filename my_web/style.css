@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('contact.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: rgba(243, 9, 99, 0.356);
+    text-align: center;
+    padding: 40px 0;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #caa9c0;
+    margin-bottom: 10px;
+}
+
+#contact {
+
+    padding: 30px 20px;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+textarea {
+    resize: none;
+    height: 200px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #333;
+    color: #fff;
+    border: rgba(0, 0, 0, 0.2)
+}
+
+/* ======= Contact ======= */
+
+#contact {
+    padding: 60px 0;
+}
+
+#contact .form-group {
+    margin-bottom: 30px;
+}
+
+#contact .form-group input,
+#contact .form-group textarea {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 20px;
+    height: 50px;
+    border-radius: 30px;
+    background: #fff;
+    border: none;
+    box-shadow: none;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#contact .form-group input:focus,
+#contact .form-group textarea:focus {
+    border-bottom: 3px solid #f34e3a;
+    outline: none;
+}
+
+#contact .form-group textarea {
+    height: 150px;
+    resize: none;
+}
+
+#contact .btn-submit {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 30px;
+    background: #f34e3a;
+    border: none;
+    padding: 15px;
+}

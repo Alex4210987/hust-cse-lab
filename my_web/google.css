@@ -1,0 +1,34 @@
+.google-search {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.google-search form {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.google-search input[type="text"] {
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 300px;
+}
+
+.google-search button[type="submit"] {
+    background-color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    border-left: 1px solid #ccc;
+}
+
+.google-search button[type="submit"]:hover {
+    background-color: #f2f2f2;
+}

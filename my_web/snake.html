@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>贪吃蛇小游戏(未完成开发，后续完善)</title>
+    <style>
+        /* 游戏区域的样式 */
+        #game-board {
+            width: 1300px;
+            height: 500px;
+            border: 2px solid black;
+            position: relative;
+            top: 50%;
+        }
+
+        /* 蛇的样式 */
+        .snake {
+            width: 20px;
+            height: 20px;
+            background-color: green;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        /* 食物的样式 */
+        .food {
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .score {
+            position: absolute;
+            top: 10%;
+            left: 90%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>贪吃蛇小游戏(未完成开发，后续完善)</h1>
+    <div id="game-board">
+        <div id="snake" class="snake"></div>
+        <div id="food" class="food"></div>
+        <div id="score" class="score"></div>
+    </div>
+
+    <script src="snake.js"></script>
+</body>
+
+</html>
